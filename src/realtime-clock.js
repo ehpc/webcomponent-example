@@ -1,7 +1,9 @@
 const template = document.createElement('template');
 template.innerHTML = `
-<strong><slot></slot></strong>
-<span class="time"></span>
+  <strong>
+    <slot></slot>
+  </strong>
+  <span class="time"></span>
 `;
 
 class Clock extends HTMLElement {
